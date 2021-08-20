@@ -29,14 +29,14 @@ main(int argc, char *argv[])	//char * = string
 
 		} else if (p[i] < 97) {
 			//LETRA MAIUSCULA
-			int Pi = p[i] - ( (int)A - 1 );	//transformando para inteiro e subtraindo 64 para deixar o A = 1 / B = 2 / C = 3
-			int Ci = ( ( Pi + k ) % 26 ) + ( (int)A - 1 );	//adicionando 64 para voltar aos valores normais de char A = 65 / B = 66 / C = 67
+			int Pi = p[i] - ( (int)A );	//transformando para inteiro e subtraindo 64 para deixar o A = 1 / B = 2 / C = 3
+			int Ci = ( ( Pi + k ) % 26 ) + ( (int)A );	//adicionando 64 para voltar aos valores normais de char A = 65 / B = 66 / C = 67
 			printf("%c", Ci);
 
 		} else {
 			//LETRA MINUSCULA
-			int Pi = p[i] - ( (int)a - 1 );	//transformando para inteiro e subtraindo 96 para deixar o a = 1 / b = 2 / c = 3
-			int Ci = ( ( Pi + k ) % 26 ) + ( (int)a - 1 );	//adicionando 96 para voltar aos valores normais de char A = 97 / B = 98 / C = 99
+			int Pi = p[i] - ( (int)a );	//transformando para inteiro e subtraindo 96 para deixar o a = 1 / b = 2 / c = 3
+			int Ci = ( ( Pi + k ) % 26 ) + ( (int)a );	//adicionando 96 para voltar aos valores normais de char A = 97 / B = 98 / C = 99
 			printf("%c", Ci);
 		}
 	}
