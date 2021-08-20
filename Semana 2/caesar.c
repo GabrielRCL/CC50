@@ -35,7 +35,7 @@ main(int argc, char *argv[])	//char * = string
 
 		} else {
 			//LETRA MINUSCULA
-			int Pi = p[i] - ( (int)a - 1 );	//transformando para inteiro e subtraindo 64 para deixar o a = 1 / b = 2 / c = 3
+			int Pi = p[i] - ( (int)a - 1 );	//transformando para inteiro e subtraindo 96 para deixar o a = 1 / b = 2 / c = 3
 			int Ci = ( ( Pi + k ) % 26 ) + ( (int)a - 1 );	//adicionando 96 para voltar aos valores normais de char A = 97 / B = 98 / C = 99
 			printf("%c", Ci);
 		}
