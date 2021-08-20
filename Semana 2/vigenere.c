@@ -13,7 +13,6 @@ int
 main(int argc, char *argv[])	//char * = string
 {
 	string k = argv[1];	// k é o valor que o humano inserir no argumento (string)
-	printf("A CHAVE EH: %s \n", k);
 
 	char A = 'A';	// Int A = 65
 	char a = 'a';	// Int a = 97
